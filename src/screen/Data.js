@@ -16,7 +16,7 @@ constructor(props){
         return (
             <View style={{}}>
                <Text>
-                {data}
+                {JSON.stringify(data)}
                </Text>
             </View>
         )
