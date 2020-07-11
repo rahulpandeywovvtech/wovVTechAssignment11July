@@ -2,13 +2,21 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, View } from 'react-native'
 
 export default class Data extends Component {
-    render( props) {
-        const { data } = this.props.params;
+constructor(props){
+    super(props)
+    this.state={
+
+    }
+}
+
+
+    render( ) {
+        const { data } = this.props.route.params;
         console.warn(data)
         return (
-            <View style={{justifyContent:"center",alignItems:"center"}}>
+            <View style={{}}>
                <Text>
-                
+                {data}
                </Text>
             </View>
         )
